@@ -1,0 +1,68 @@
+@import "../../media";
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  background: white;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  border-bottom: 0.1px;
+  width: 100%;
+  z-index: 999;
+  .header_left {
+    display: flex;
+    img {
+      object-fit: contain;
+      margin-right: 10px;
+      height: 40px;
+    }
+    .header_search {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      height: 35px;
+      color: grey;
+      background-color: #eef3f8;
+      input {
+        outline: none;
+        border: none;
+        background: none;
+      }
+    }
+  }
+
+  .header_right {
+    display: flex;
+  }
+}
+
+.avata {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  margin-right: 20px;
+  color: grey;
+  cursor: pointer;
+}
+.headerOption_userProfile {
+  display: none;
+  position: absolute;
+  top: 65px;
+  right: 0;
+  transition: 200ms ease;
+  &.remove {
+    display: block;
+  }
+}
+.signout {
+  margin: 8px auto;
+  &:hover {
+    background: whitesmoke;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+  }
+}

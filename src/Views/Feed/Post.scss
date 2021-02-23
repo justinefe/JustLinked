@@ -1,0 +1,98 @@
+.post {
+  background: white;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  // overflow: hidden;
+
+  .post_buttons {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    padding-bottom: 8px;
+  }
+}
+
+.post_img {
+  width: 100%;
+  height: auto;
+  img {
+    object-fit: contain;
+  }
+}
+.post_vi {
+  width: 100%;
+
+  height: auto;
+}
+.comment_display {
+  display: none;
+  &.add {
+    padding: 8px;
+    display: block;
+  }
+}
+
+.post_likes_comments_total {
+  display: flex;
+  margin: 12px 0;
+  padding: 12px 15px;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: smaller;
+  border-bottom: 2px solid #f3f2ef;
+  .post_likes {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    .MuiSvgIcon-root {
+      color: #0177b7;
+      width: 18px;
+      height: 18px;
+    }
+    .post_img {
+      width: 18px;
+      height: 18px;
+      margin-left: 4px;
+    }
+  }
+}
+
+.tooltip {
+  position: relative;
+  .tooltiptext {
+    visibility: hidden;
+    width: 60px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 12px;
+    padding: 2px;
+    position: absolute;
+    z-index: 1;
+    bottom: 250%;
+    left: -60%;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.post_likes_comments_separator {
+  margin: 0 8px;
+  width: 2px;
+  height: 2px;
+  background-color: #f3f2ef;
+}
+.post_likes_comments_total_likes {
+  display: flex;
+  // justify-content: ;
+  align-items: center;
+}
+.post_likes_total {
+  margin-left: 4px;
+}

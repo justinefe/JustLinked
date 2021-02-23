@@ -1,0 +1,45 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  background-color: white;
+  a {
+    color: #0a66c2;
+  }
+  .svg {
+    align-self: center;
+    padding-top: 16px;
+    color: #0a66c2;
+  }
+  .auth-buttons {
+    display: flex;
+    align-items: center;
+    // justify-content: space-around;
+    .join-now {
+      padding: 5px 15px;
+      margin-right: 15px;
+      text-decoration: none;
+      &:hover {
+        background: whitesmoke;
+        border-radius: 4px;
+        cursor: pointer;
+        color: black;
+      }
+    }
+    .sign-in {
+      padding: 5px 15px;
+      color: #665ed0;
+      border: 1px solid #665ed0;
+      border-radius: 12px;
+      text-decoration: none;
+
+      &:hover {
+        background: #eef3f8;
+        cursor: pointer;
+        border: 2px solid #665ed0;
+      }
+    }
+  }
+  // ustify-content: space-between;
+}

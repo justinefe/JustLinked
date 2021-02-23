@@ -1,0 +1,83 @@
+.LikesPopUp_top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  span {
+    font-weight: 500;
+    font-size: large;
+  }
+}
+
+.navlink_active_class {
+  margin: 0 8px;
+  .LikesPopUp_middle_links {
+    color: green;
+    border-bottom: 4px solid green;
+  }
+}
+
+//Middle
+.LikesPopUp_middle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: medium;
+  overflow-x: auto;
+  width: 80%;
+}
+.LikesPopUp_middle_links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: gray;
+  padding: 15px;
+
+  img {
+    height: 22px;
+    margin-right: 2px;
+  }
+}
+.first {
+  margin-right: 4px;
+}
+//Bottom
+.LikesPopUp_bottom {
+  overflow-y: auto;
+  .LikesPopUp_bottom_info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    position: relative;
+    padding: 15px;
+
+    .MuiAvatar-root {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+.LikesPopUp_bottom_image {
+  position: absolute;
+  width: 15px;
+  object-fit: contain;
+  border: 1px white solid;
+  border-radius: 50%;
+  transform: translate(330%, 110%);
+}
+.LikesPopUp_personal {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+  margin-left: 10px;
+  color: gray;
+  padding-bottom: 24px;
+  border-bottom: 1.5px solid#f3f2ef;
+
+  :first-child {
+    font-size: medium;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: black;
+  }
+}

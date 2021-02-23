@@ -1,0 +1,51 @@
+@mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: 599px) {
+      @content;
+    }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 600px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $size == desktop-up {
+    @media (min-width: 992px) {
+      @content;
+    }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $size == small-phone {
+    @media (max-width: 360px) {
+      @content;
+    }
+  } @else if $size == smaller-desktop {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else if $size == big_tab {
+    @media (min-width: 800px) and (max-width: 1024px) and (min-height: 1024px) {
+      @content;
+    }
+  } @else if $size == long_desktop {
+    @media (min-width: 600px) and (max-width: 1400px) and (min-height: 900px) {
+      @content;
+    }
+  } @else if $size == longer_desktop {
+    @media (min-width: 800px) and (min-height: 1024px) {
+      @content;
+    }
+  }
+}
+
+$colors: (
+  theme: #1a6ac9,
+  secondary: color(dark),
+  cool: #fbfdff,
+  text: #000000,
+  text_fade: #6f6f6f,
+);
+
+@function color($color) {
+  @return map-get($colors, $color);
+}
